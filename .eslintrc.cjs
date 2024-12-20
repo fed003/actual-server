@@ -4,7 +4,7 @@ module.exports = {
     browser: true,
     amd: true,
     node: true,
-    jest: true
+    jest: true,
   },
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint', 'prettier'],
@@ -14,8 +14,9 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': [
       'error',
       {
-        argsIgnorePattern: '^_'
-      }
-    ]
-  }
+        argsIgnorePattern: '^_',
+        endOfLine: 'off',
+      },
+    ],
+  },
 };
